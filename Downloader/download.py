@@ -1,8 +1,11 @@
 import SoccerNet
 from SoccerNet.Downloader import SoccerNetDownloader
 
-directory = input("Directory (d:\git\sn-spotting\Data): ")
-password = input("Password (s0cc3rn3t): ")
+passwordFile = open('password.txt','r')
+password = passwordFile.readline()
+print("Password:",password)
+
+directory = input("Directory (d:\data\SoccerNet): ")
 mySoccerNetDownloader=SoccerNetDownloader(LocalDirectory=directory)
 mySoccerNetDownloader.password = password
 
