@@ -33,7 +33,7 @@ def main(args):
 
     if (args.low_quality):
         print("Download LQ version...")
-        mySoccerNetDownloader.downloadGames(files=["1_224p.mkv", "2_224p.mkv"], split=["train","valid","test","challenge"])
+        mySoccerNetDownloader.downloadGames(files=["1.mkv", "2.mkv"], split=["train","valid","test","challenge"])
 
 if __name__=="__main__":
     main(get_args())
